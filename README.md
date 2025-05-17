@@ -88,7 +88,8 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ---
 ## 🚀 Author
-Your Name Here
+Rishita Priyadarshini Saraf
+
 Feel free to connect with me on GitHub or LinkedIn.
 
 
