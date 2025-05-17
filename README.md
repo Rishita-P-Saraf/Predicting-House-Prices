@@ -1,9 +1,18 @@
-# Predicting-House-Prices
-A python project in which I use Linear Regression to predict house prices on California Housing Dataset
+# 🏠 Predicting House Prices using Linear Regression and KNN Regressor
 
-## Overview
-This project demonstrates the implementation of a Linear Regression model using the California Housing dataset from Scikit-Learn. The dataset provides information about various housing features and median house values, allowing us to predict house prices based on given features.
+This project aims to predict house prices using two supervised machine learning algorithms: **Linear Regression** and **K-Nearest Neighbors (KNN) Regressor**. The models are trained on structured house pricing data, and evaluated based on performance metrics. The workflow includes data preprocessing, visualization, model training, evaluation, and saving the best model.
 
+---
+
+## 📌 Objectives
+
+- Understand key factors affecting house prices.
+- Perform data preprocessing and outlier detection.
+- Train two regression models: Linear Regression and KNN Regressor.
+- Visualize insights using boxplots.
+- Save the trained model for reuse.
+
+---
 ## Dataset
 The California Housing dataset contains:
 
@@ -26,34 +35,61 @@ The California Housing dataset contains:
 - Longitude - Longitude of the district
 
 - A target variable (MedHouseVal) representing the median house value in $100,000s.
+---
+## 🧠 Machine Learning Models
 
-##  Project Workflow
-- Data Loading & Exploration – Understanding dataset structure.
-- Preprocessing – Handling missing values, feature scaling, and splitting into train/test sets.
-- Model Training – Using Linear Regression to fit the dataset.
-- Evaluation – Analyzing model performance with metrics like Mean Squared Error (MSE) and R² score.
-- Visualization – Plotting feature relationships and regression results.
+- **Linear Regression**  
+  A basic regression technique used for predicting continuous variables.
 
-📈 Expected Results
-- Model performance metrics such as RMSE (Root Mean Squared Error) and R² Score.
-- Insights into feature importance and regression coefficients.
+- **K-Nearest Neighbors Regressor (KNN)**  
+  A non-parametric model that predicts values based on the average of its nearest neighbors.
 
-🔮 Future Improvements
-- Experiment with Ridge and Lasso regression for better regularization.
-- Hyperparameter tuning for optimal performance.
-- Feature engineering to improve prediction accuracy.
+---
 
-Performance is measured using Mean Squared Error (MSE), which quantifies the average squared difference between actual and predicted values.
+## 📁 Project Structure
 
-# Future Improvements
-- Feature scaling and normalization to improve predictions.
+```plaintext
+Predicting House Prices - Linear Regression and KNN Regressor/
+│
+├── Predicting house prices -Linear Regression.ipynb      # Linear Regression notebook
+├── Predicting house prices - KNN Regressor.ipynb         # KNN Regressor notebook
+├── model.pkl                                             # Saved regression model
+├── BoxPlot.png                                           # General boxplot visualization
+├── BoxPlot_TrainData.png                                 # Boxplot for training data
+├── BoxPlot_TestData.png                                  # Boxplot for testing data
+├── .ipynb_checkpoints/                                   # Jupyter notebook backups
+```
+---
+## 📊 Visualizations
+- BoxPlot.png: Outlier detection across the full dataset.
+- BoxPlot_TrainData.png: Outliers in the training subset.
+- BoxPlot_TestData.png: Outliers in the testing subset.
 
-- Experimenting with polynomial regression or other machine learning models.
+---
 
-- Hyperparameter tuning and feature selection to enhance model performance.
+## 🧪 Evaluation Metrics
+Mean Squared Error (MSE)
 
-# License
-This project is open-source and available for personal and educational use.
+Root Mean Squared Error (RMSE)
+
+R² Score
+
+These metrics help compare the performance of the models and determine the best fit.
+---
+## 💾 Model Deployment
+Trained models are saved as .pkl files using joblib, allowing reuse without retraining.
+---
+## 📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+---
+## 🙌 Acknowledgments
+- Project developed for learning purposes using open datasets.
+- Libraries used: scikit-learn, pandas, numpy, matplotlib, seaborn.
+
+---
+## 🚀 Author
+Your Name Here
+Feel free to connect with me on GitHub or LinkedIn.
 
 
-Feel free to fork this project and contribute as you please.
+Let me know if you'd like me to create a matching `LICENSE` file or help format the notebooks as well!
